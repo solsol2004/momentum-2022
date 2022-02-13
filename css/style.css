@@ -1,3 +1,22 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Comfortaa", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  overflow: hidden;
+}
+
 .hidden {
   display: none;
 }
@@ -13,4 +32,98 @@ img {
   bottom: 0px;
   z-index: -1;
   opacity: 80%;
+}
+
+#blank {
+  margin-top: 9rem;
+}
+
+#weather {
+  font-size: 12px;
+  color: white;
+  width: 9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#clock {
+  font-size: 100px;
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#greeting {
+  font-size: 20px;
+  color: white;
+  margin: 1rem;
+  padding-left: 1rem;
+}
+
+#todo-form input {
+  font-size: 13px;
+  color: white;
+  margin: 0.8rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+  width: 8rem;
+  text-align: center;
+  font-family: "Hi Melody", cursive;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-form input::placeholder {
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-list {
+  font-family: "Hi Melody", cursive;
+  font-size: 13px;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+#todo-list li button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  margin-left: 3px;
+}
+
+#todo-list li button:hover {
+  cursor: pointer;
+}
+
+#quote {
+  width: 100vw;
+  height: 35vh;
+  position: relative;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+#quote-container span {
+  display: block;
+  color: white;
+  font-family: "Hi Melody", cursive;
+}
+
+#quote-container span:last-child {
+  display: flex;
+  justify-content: end;
 }
